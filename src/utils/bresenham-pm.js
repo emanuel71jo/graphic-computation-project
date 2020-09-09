@@ -2,13 +2,11 @@ export function PM(x1, y1, x2, y2, height, width) {
   var points = [];
   var dX = x2 - x1;
   var dY = y2 - y1;
-  var x = x1;
-  var y = y1;
 
   var xIncr, yIncr, d, incrE, incrNE;
 
-  var X = Math.round(x);
-  var Y = Math.round(y);
+  var X = Math.round(x1);
+  var Y = Math.round(y1);
 
   points.push(X / (width / 2), Y / (height / 2));
 

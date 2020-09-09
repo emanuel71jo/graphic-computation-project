@@ -9,7 +9,7 @@ export function DDA(x1, y1, x2, y2, height, width) {
   var X = Math.round(x);
   var Y = Math.round(y);
 
-  points.push(X / width, Y / height);
+  points.push(X / (width / 2), Y / (height / 2));
 
   var passos = Math.max(Math.abs(deltaX), Math.abs(deltaY));
   var xIncr = deltaX / passos;
@@ -19,7 +19,7 @@ export function DDA(x1, y1, x2, y2, height, width) {
     X += xIncr;
     Y += yIncr;
 
-    points.push(X / width, Y / height);
+    points.push(X / (width / 2), Y / (height / 2));
   }
 
   return points;

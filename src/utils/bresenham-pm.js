@@ -10,7 +10,7 @@ export function PM(x1, y1, x2, y2, height, width) {
   var X = Math.round(x);
   var Y = Math.round(y);
 
-  points.push(X / width, Y / height);
+  points.push(X / (width / 2), Y / (height / 2));
 
   if (deltaX < 0) {
     deltaX = -deltaX;
@@ -39,7 +39,7 @@ export function PM(x1, y1, x2, y2, height, width) {
         p += c2;
         Y += yIncr;
       }
-      points.push(X / width, Y / height);
+      points.push(X / (width / 2), Y / (height / 2));
     }
   } else {
     p = 2 * deltaX - deltaY;
@@ -54,7 +54,7 @@ export function PM(x1, y1, x2, y2, height, width) {
         p += c2;
         x += xIncr;
       }
-      points.push(X / width, Y / height);
+      points.push(X / (width / 2), Y / (height / 2));
     }
   }
 

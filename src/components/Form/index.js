@@ -4,6 +4,8 @@ import { StateContext } from "../../App";
 import { DDA } from "../../utils/dda.js";
 import { PM } from "../../utils/bresenham-pm.js";
 
+import "./styles.css";
+
 function Form() {
   const { setPoints, setFrame, setCoordinates } = useContext(StateContext);
 

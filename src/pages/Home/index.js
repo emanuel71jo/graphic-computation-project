@@ -12,14 +12,13 @@ function Home() {
   return (
     <div id="home-container">
       <Form />
-      <Canvas height={500} width={500} points={[0, 0]} />
-      {/* {frame.height && (
+      {frame.height && (
         <Canvas
           height={frame.height}
           width={frame.width}
           points={coordinates}
         />
-      )} */}
+      )}
     </div>
   );
 }
